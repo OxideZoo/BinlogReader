@@ -1,28 +1,25 @@
-This is a Kotlin Multiplatform project targeting Desktop (JVM).
+# BinlogReader
 
-* [/composeApp](./composeApp/src) is for code that will be shared across your Compose Multiplatform applications.
-  It contains several subfolders:
-    - [commonMain](./composeApp/src/commonMain/kotlin) is for code that’s common for all targets.
-    - Other folders are for Kotlin code that will be compiled for only the platform indicated in the folder name.
-      For example, if you want to use Apple’s CoreCrypto for the iOS part of your Kotlin app,
-      the [iosMain](./composeApp/src/iosMain/kotlin) folder would be the right place for such calls.
-      Similarly, if you want to edit the Desktop (JVM) specific part, the [jvmMain](./composeApp/src/jvmMain/kotlin)
-      folder is the appropriate location.
-
-### Build and Run Desktop (JVM) Application
-
-To build and run the development version of the desktop app, use the run configuration from the run widget
-in your IDE’s toolbar or run it directly from the terminal:
-
-- on macOS/Linux
-  ```shell
-  ./gradlew :composeApp:run
-  ```
-- on Windows
-  ```shell
-  .\gradlew.bat :composeApp:run
-  ```
+一个基于 **Compose Multiplatform** 的桌面端应用，用于**阅读 Binlog（二进制日志）**。
+> 当前阶段只聚焦「阅读 / 浏览」，不涉及写入、导出或回放等能力。
 
 ---
 
-Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html)…
+## 特性（当前阶段）
+
+- 读取并浏览 Binlog 内容（仅阅读）。
+- 跨平台桌面 UI（JVM/桌面），专注简洁与可用性。
+
+> 方向尚在探索中，功能会在后续逐步补齐。
+
+---
+
+## 快速开始
+
+### 运行（开发模式）
+
+在项目根目录执行：
+
+- macOS / Linux / Windows
+  ```bash
+  ./gradlew :composeApp:run
