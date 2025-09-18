@@ -13,8 +13,8 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import binlog_reader.composeapp.generated.resources.Res
-import binlog_reader.composeapp.generated.resources.compose_multiplatform
+import binlogreader.composeapp.generated.resources.Res
+import binlogreader.composeapp.generated.resources.compose_multiplatform
 import org.jetbrains.compose.resources.painterResource
 import org.jetbrains.compose.ui.tooling.preview.Preview
 
